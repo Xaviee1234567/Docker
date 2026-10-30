@@ -26,9 +26,18 @@ services:
     volumes:
     - ./redis.conf:/usr/local/etc/redis/redis.conf:ro,Z
     - ./redisdata:/data
+  vertica:
+    image: docker.io/jbfavre/vertica
+    container_name: vertica
+    ports:
+    - 5433:5433
+    environment:
+      vertica_password: ${vertica_pwd}
+      vertica_db: vertica_db
+    volumes:
+    - ./verticadata:/var/lib/vertica
 
 volumes:
   mysqldata:
   redisdata:
-
-
+  verticadata:
