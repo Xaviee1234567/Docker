@@ -1,0 +1,4 @@
+#docker file 
+.env
+mysqldata/
+redisdata/

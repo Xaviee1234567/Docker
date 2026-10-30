@@ -1,0 +1,1 @@
+FROM docker.io/eclipse-temurin:21-jre
