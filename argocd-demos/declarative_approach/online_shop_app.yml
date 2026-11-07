@@ -8,7 +8,7 @@ spec:
   source:
     repoURL:  https://github.com/Xaviee1234567/Docker.git   # Replace it with your forked repo
     targetRevision: master
-    path: declarative_approach/online_shop
+    path: argocd-demos/declarative_approach/online_shop
   destination:
     server: https://172.20.207.57:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
